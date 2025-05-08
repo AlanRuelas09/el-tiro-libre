@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Tiro Libre Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#redes">Redes Sociales</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="inicio">
+        <div class="container">
+            <h1>Bienvenidos a El Tiro Libre Web</h1>
+            <p>Tu tienda de fútbol en línea</p>
+        </div>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section id="redes">
+        <div class="social-media">
+            <a href="https://www.instagram.com/el_tirolibre_mx" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@el_tirolibre_mx" target="_blank">TikTok</a>
+            <a href="https://wa.me/8715238245" target="_blank">WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Sección Catálogo -->
+    <section id="catalogo">
+        <h2 style="text-align:center;">Catálogo</h2>
+        <div class="buscador">
+            <input type="text" id="busqueda" placeholder="Buscar jersey..." onkeyup="filtrarProductos()">
+        </div>
+        
+        <div class="productos">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="img/America local 24-25.jpg" alt="Jersey America local 24/25">
+                <h3>Jersey América Local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="img/AC Milan local 24-25.jpg" alt="Jersey AC Milan local 24/25">
+                <h3>Jersey AC Milan Local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/AC Milan visitante 24-25.jpg" alt="Jersey AC Milan visitante 24/25">
+                <h3>Jersey AC Milan visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Real Madrid local 24-25.jpg" alt="Jersey Real Madrid local 24/25">
+                <h3>Jersey Real Madrid local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Mexico visitante 24-25.jpg" alt="Jersey Mexico visitante 24/25">
+                <h3>Jersey Mexico visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Chivas local 24-25.jpg" alt="Jersey Chivas del GDL local 24/25">
+                <h3>Jersey Chivas del GDL local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Argentina local 24-25.jpg" alt="Jersey Argentina local 24/25">
+                <h3>Jersey Argentina local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                 <img src="img/Real Madrid visitante 24-25.jpg" alt="Jersey Real Madrid visitante 24/25">
+                 <h3>Jersey Real Madrid visitante 24/25</h3>
+                  <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+             <div class="producto">
+                <img src="img/Manchester City visitante 23-24.jpg" alt="Jersey Manchester City visitante 23/24">
+                 <h3>Jersey Manchester City visitante 23/24</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Portugal local 24-25.jpg" alt="Jersey Portugal local 24/25">
+                 <h3>Jersey Portugal local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Chivas visitante 24-25.jpg" alt="Jersey Chivas del GDL visitante 24/25">
+                 <h3>Jersey Chivas del GDL visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Paises Bajos local 24-25.jpg" alt="Jersey Países Bajos local 24/25">
+                 <h3>Jersey Países Bajos local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Paises Bajos visitante 24-25.jpg" alt="Jersey Países Bajos visitante 24/25">
+                 <h3>Jersey Países Bajos visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Real Madrid reserva 24-25.jpg" alt="Jersey Real Madrid reserva 24/25">
+                 <h3>Jersey Real Madrid reserva 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Mexico local 23-24.jpg" alt="Jersey Mexico local 23/24">
+                 <h3>Jersey Mexico local 23/24</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Mexico visitante 23-24.jpg" alt="Jersey Mexico visitante 23/24">
+                 <h3>Jersey Mexico visitante 23/24</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Roma visitante 24-25.jpg" alt="Jersey Roma visitante 22/23">
+                 <h3>Jersey Roma visitante 22/23</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Mexico local 24-25.jpg" alt="Jersey Mexico local 24/25">
+                 <h3>Jersey Mexico local 24/25</h3>
+                <p>Precio: $529 MXN</p>
+                 <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Manchester United visitante 24-25.jpg" alt="Jersey Manchester United visitante 24/25">
+                 <h3>Jersey Manchester United visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Francia visitante 24-25.jpg" alt="Jersey Francia visitante 24/25">
+                 <h3>Jersey Francia visitante 24/25</h3>
+                <p>Precio: $599 MXN</p>
+                 <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Pumas local 24-25.jpg" alt="Jersey Pumas local 24/25">
+                 <h3>Jersey Pumas local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Monterrey visitante 24-25.jpg" alt="Jersey Monterrey visitante 24/25">
+                 <h3>Jersey Monterrey visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Monterrey local 24-25.jpg" alt="Jersey Monterrey local 24/25">
+                 <h3>Jersey Monterrey local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Cruz Azul visitante 24-25.jpg" alt="Jersey Cruz Azul visitante 24/25">
+                 <h3>Jersey Cruz Azul visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Necaxa visitante 24-25.jpg" alt="Jersey Necaxa local 24/25">
+                 <h3>Jersey Necaxa local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Colombia aniversario 24-25.jpg" alt="Jersey Colombia edicion aniversario 24/25">
+                 <h3>Jersey Colombia edicion aniversario 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Leon visitante 24-25.jpg" alt="Jersey Leon visitante 24/25">
+                 <h3>Jersey Leon visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/America visitante 24-25.jpg" alt="Jersey America visitante 24/25">
+                 <h3>Jersey America visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/West Ham United local 24-25.jpg" alt="Jersey West Ham united local 23/24">
+                 <h3>Jersey West Ham united local 23/24</h3>
+                <p>Precio: $529 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Newcastle local 24-25.jpg" alt="Jersey Newcastle local 23/24">
+                 <h3>Jersey Newcastle local 23/24</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Inter Miami local 24-25.jpg" alt="Jersey Inter Miami local 24/25">
+                 <h3>Jersey Inter Miami local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Inter Miami visitante 24-25.jpg" alt="Jersey Inter Miami visitante 24/25">
+                 <h3>Jersey Inter Miami visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Inter Miami reserva 24-25.jpg" alt="Jersey Inter Miami reserva 24/25">
+                 <h3>Jersey Inter Miami reserva 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Italia visitante 24-25.jpg" alt="Jersey Italia visitante 24/25">
+                 <h3>Jersey Italia visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                 <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+
+            <div class="producto">
+                <img src="img/Juventus local 24-25.jpg" alt="Jersey Juventus local 24/25">
+                <h3>Jersey Juventus local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/PSG local 24-25.jpg" alt="Jersey PSG local 24/25">
+                <h3>Jersey PSG local 24/25</h3>
+                <p>Precio: $599 MXN</p>
+                <p>Con nombre, número y parches: $699 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/PSG local 23-24.jpg" alt="Jersey PSG local 23/24">
+                <h3>Jersey PSG local 23/24</h3>
+                <p>Precio: $699 MXN</p>
+                <p>Con nombre, número y parches: $749 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/PSG visitante 23-24.jpg" alt="Jersey PSG visitante 23/24">
+                <h3>Jersey PSG visitante 23/24</h3>
+                <p>Precio: $699 MXN</p>
+                <p>Con nombre, número y parches: $749 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Borusia Dormunt local 22-23.jpg" alt="Jersey Borussia Dortmund local 22/23">
+                <h3>Jersey Borussia Dortmund local 22/23</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Borusia Dormunt visitante 22-23.jpg" alt="Jersey Borussia Dortmund visitante 22/23">
+                <h3>Jersey Borussia Dortmund visitante 22/23</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Barcelona visitante 24-25.jpg" alt="Jersey Barcelona FC visitante 24/25">
+                <h3>Jersey Barcelona FC visitante 24/25</h3>
+                <p>Precio: $599 MXN</p>
+                <p>Con nombre, número y parches: $699 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Flamengo local 24-25.jpg" alt="Jersey Flamengo local 24/25">
+                <h3>Jersey Flamengo local 24/25</h3>
+                <p>Precio: $529 MXN</p>
+                <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Manchester United local 24-25.jpg" alt="Jersey Manchester United local 24/25">
+                <h3>Jersey Manchester United local 24/25</h3>
+                <p>Precio: $599 MXN</p>
+                <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Brasil visitante 24-25.jpg" alt="Jersey Brasil visitante 24/25">
+                <h3>Jersey Brasil visitante 24/25</h3>
+                <p>Precio: $599 MXN</p>
+                <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Portugal local 22-23.jpg" alt="Jersey Portugal local 22/23">
+                <h3>Jersey Portugal local 22/23</h3>
+                <p>Precio: $599 MXN</p>
+                <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Portugal visitante 22-23.jpg" alt="Jersey Portugal visitante 22/23">
+                <h3>Jersey Portugal visitante 22/23</h3>
+                <p>Precio: $599 MXN</p>
+                <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Barcelona local 24-25.jpg" alt="Jersey Barcelona FC local 24/25">
+                <h3>Jersey Barcelona FC local 24/25</h3>
+                <p>Precio: $529 MXN</p>
+                <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Manchester City visitante 24-25.jpg" alt="Jersey Manchester City visitante 24/25">
+                <h3>Jersey Manchester City visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Manchester City local 24-25.jpg" alt="Jersey Manchester City local 24/25">
+                <h3>Jersey Manchester City local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Alemania local 24-25.jpg" alt="Jersey Alemania local 24/25">
+                <h3>Jersey Alemania local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Alemania visitante 24-25.jpg" alt="Jersey Alemania visitante 24/25">
+                <h3>Jersey Alemania visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Real Betis local 24-25.jpg" alt="Jersey Real Betis local 24/25">
+                <h3>Jersey Real Betis local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Argentina visitante 24-25.jpg" alt="Jersey Argentina visitante 24/25">
+                <h3>Jersey Argentina visitante 24/25</h3>
+                <p>Precio: $629 MXN</p>
+                <p>Con nombre, número y parches: $699 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Tigres local 24-25.jpg" alt="Jersey Tigres local 24/25">
+                <h3>Jersey Tigres local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Tigres visitante 24-25.jpg" alt="Jersey Tigres visitante 24/25">
+                <h3>Jersey Tigres visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Borusia Dormunt local 24-25.jpg" alt="Jersey Borussia Dortmund local 24/25">
+                <h3>Jersey Borussia Dortmund local 24/25</h3>
+                <p>Precio: $529 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Real Madrid visitante 17-18.jpg" alt="Jersey Real Madrid visitante 17/18">
+                <h3>Jersey Real Madrid visitante 17/18</h3>
+                <p>Precio: $599 MXN</p>
+                <p>Con nombre, número y parches: $699 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Manchester United local 07-08.jpg" alt="Jersey Manchester United local 07/08">
+                <h3>Jersey Manchester United local 07/08</h3>
+                <p>Precio: $529 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Francia local 2006.jpg" alt="Jersey Francia local 2006">
+                <h3>Jersey Francia local 2006</h3>
+                <p>Precio: $529 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Japon local 24-25.jpg" alt="Jersey Japón local 24/25">
+                <h3>Jersey Japón local 24/25</h3>
+                <p>Precio: $449 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Colombia local 24-25.jpg" alt="Jersey Colombia local 24/25">
+                <h3>Jersey Colombia local 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $529 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Atletico Madrid local 04-05.jpg" alt="Jersey Atlético de Madrid local 13/14">
+                <h3>Jersey Atlético de Madrid local 13/14</h3>
+                <p>Precio: $549 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Roma local 00-01.jpg" alt="Jersey Roma local 00/01">
+                <h3>Jersey Roma local 00/01</h3>
+                <p>Precio: $599 MXN</p>
+                <p>Con nombre, número y parches: $749 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Barcelona local 14-15.jpg" alt="Jersey Barcelona local 14/15">
+                <h3>Jersey Barcelona local 14/15</h3>
+                <p>Precio: $529 MXN</p>
+                <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Brasil local 2002.jpg" alt="Jersey Brasil local 2002">
+                <h3>Jersey Brasil local 2002</h3>
+                <p>Precio: $629 MXN</p>
+                <p>Con nombre, número y parches: $699 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Atletico de Madrid local 04-05.jpg" alt="Jersey Atlético de Madrid local 04/05">
+                <h3>Jersey Atlético de Madrid local 04/05</h3>
+                <p>Precio: $529 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Barcelona local 05-06.jpg" alt="Jersey Barcelona local 05/06">
+                <h3>Jersey Barcelona local 05/06</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $699 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Toluca local 24-25.jpg" alt="Jersey Toluca local 24/25">
+                <h3>Jersey Toluca local 24/25</h3>
+                <p>Precio: $449 MXN</p>
+                <p>Con nombre, número y parches: $499 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Monterrey local 99-00.jpg" alt="Jersey Monterrey local 99/00">
+                <h3>Jersey Monterrey local 99/00</h3>
+                <p>Precio: $599 MXN</p>
+                <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Francia visitante 2006.jpg" alt="Jersey Francia visitante 2006">
+                <h3>Jersey Francia visitante 2006</h3>
+                <p>Precio: $599 MXN</p>
+                <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Cruz Azul portero 24-25.jpg" alt="Jersey Cruz Azul portero 24/25">
+                <h3>Jersey Cruz Azul portero 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $649 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Barcelona local 09-10.jpg" alt="Jersey Barcelona local 09/10">
+                <h3>Jersey Barcelona local 09/10</h3>
+                <p>Precio: $529 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Boca Juniors 1998.jpg" alt="Jersey Boca Juniors local 1981">
+                <h3>Jersey Boca Juniors local 1981</h3>
+                <p>Precio: $499 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Japon visitante 24-25.jpg" alt="Jersey Japón visitante 24/25">
+                <h3>Jersey Japón visitante 24/25</h3>
+                <p>Precio: $549 MXN</p>
+                <p>Con nombre, número y parches: $629 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Chelsea local 20-21.jpg" alt="Jersey Chelsea local 20/21">
+                <h3>Jersey Chelsea local 20/21</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Inglaterra local 24-25.jpg" alt="Jersey Inglaterra local 24/25">
+                <h3>Jersey Inglaterra local 24/25</h3>
+                <p>Precio: $449 MXN</p>
+                <p>Con nombre, número y parches: $529 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Real Madrid local 23-24.jpg" alt="Jersey Real Madrid 23/24">
+                <h3>Jersey Real Madrid 23/24</h3>
+                <p>Precio: $449 MXN</p>
+                <p>Con nombre, número y parches: $499 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Pumas visitante 24-25.jpg" alt="Jersey Pumas visitante 24/25">
+                <h3>Jersey Pumas visitante 24/25</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $529 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Brasil edicion especial 24-25.jpg" alt="Jersey Brasil edición especial 24/25">
+                <h3>Jersey Brasil edición especial 24/25</h3>
+                <p>Precio: $449 MXN</p>
+                <p>Con nombre, número y parches: $499 MXN</p>
+            </div>
+            
+            <div class="producto">
+                <img src="img/Manchester City local 22-23.jpg" alt="Jersey Manchester City local 22/23">
+                <h3>Jersey Manchester City local 22/23</h3>
+                <p>Precio: $499 MXN</p>
+                <p>Con nombre, número y parches: $599 MXN</p>
+            </div>
+            
+            <!-- Puedes agregar más productos así -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 El Tiro Libre Web. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function filtrarProductos() {
+            const input = document.getElementById('busqueda').value.toLowerCase();
+            const productos = document.querySelectorAll('.producto');
+        
+            productos.forEach(producto => {
+                const texto = producto.textContent.toLowerCase();
+                producto.style.display = texto.includes(input) ? 'block' : 'none';
+            });
+        }
+        </script>
+        
+</body>
+</html>

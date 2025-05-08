@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #inicio {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+  }
+  
+  .social-media {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .social-media a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  #catalogo {
+    padding: 20px;
+  }
+  
+  .productos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten a nuevas líneas */
+    justify-content: center; /* Centra las imágenes */
+    gap: 20px; /* Espacio entre imágenes */
+  }
+  
+  .producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 100%; /* Para asegurarse de que se ajusten bien */
+    max-width: 250px; /* Limita el ancho de cada producto */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Espacio entre filas */
+  }
+  
+  .producto img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e1e1e1;
+    font-size: 14px;
+  }
+  
+  .buscador {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.buscador input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Contenido */
+.container {
+  padding: 20px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Catálogo */
+#catalogo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  width: 22%; /* En una pantalla normal, mostrar 4 productos por fila */
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Estilos para dispositivos móviles (media query) */
+@media (max-width: 768px) {
+  .producto {
+      width: 45%; /* 2 productos por fila en tabletas */
+  }
+}
+
+@media (max-width: 480px) {
+  .producto {
+      width: 90%; /* 1 producto por fila en móviles */
+  }
+  h1 {
+      font-size: 1.5em;
+  }
+  p {
+      font-size: 1em;
+  }
+}

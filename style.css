@@ -199,3 +199,58 @@ footer {
       font-size: 1em;
   }
 }
+
+@media (max-width: 768px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding: 1rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-img {
+  max-width: 90%;
+  max-height: 60vh;
+  margin-bottom: 1rem;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.descripcion-modal {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.mensaje-modal {
+  color: #00ff99;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.cerrar {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}

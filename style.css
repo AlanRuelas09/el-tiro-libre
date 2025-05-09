@@ -181,29 +181,28 @@ footer {
   margin-top: 20px;
 }
 
-/* Estilos para dispositivos móviles (media query) */
+/* Para tabletas (hasta 768px) */
 @media (max-width: 768px) {
-  .producto {
-      width: 45%; /* 2 productos por fila en tabletas */
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px;
   }
 }
 
+/* Para celulares pequeños (hasta 480px) */
 @media (max-width: 480px) {
-  .producto {
-      width: 90%; /* 2 producto por fila en móviles */
+  .productos {
+    grid-template-columns: repeat(2, 1fr); /* También 2 columnas en móviles */
   }
-  h1 {
-      font-size: 1.5em;
-  }
-  p {
-      font-size: 1em;
-  }
-}
 
-@media (max-width: 768px) {
-    .productos {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
 }
 
 /* Estilos para el modal */

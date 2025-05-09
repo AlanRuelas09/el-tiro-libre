@@ -192,10 +192,23 @@ footer {
 @media (max-width: 480px) {
   .productos {
     grid-template-columns: repeat(2, 1fr); /* 2 por fila en móviles */
+    gap: 10px; /* Espacio entre productos */
+  }
+
+  .producto {
+    padding: 8px;
+  }
+
+  .producto img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   p {

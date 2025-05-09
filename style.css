@@ -190,7 +190,7 @@ footer {
 
 @media (max-width: 480px) {
   .producto {
-      width: 55%; /* 2 producto por fila en móviles */
+      width: 45%; /* 2 producto por fila en móviles */
   }
   h1 {
       font-size: 1.5em;
@@ -202,7 +202,7 @@ footer {
 
 @media (max-width: 768px) {
     .productos {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
     }
 }      
 

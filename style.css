@@ -181,17 +181,17 @@ footer {
   margin-top: 20px;
 }
 
-/* Responsive: tabletas */
+/* Media Query para tabletas */
 @media (max-width: 768px) {
   .productos {
     grid-template-columns: repeat(2, 1fr); /* 2 por fila en tabletas */
   }
 }
 
-/* Responsive: móviles */
+/* Media Query para móviles */
 @media (max-width: 480px) {
   .productos {
-    grid-template-columns: repeat(2, 1fr); /* 2 por fila también en celulares */
+    grid-template-columns: repeat(2, 1fr); /* 2 por fila en móviles */
   }
 
   h1 {

@@ -184,13 +184,13 @@ footer {
 /* Estilos para dispositivos móviles (media query) */
 @media (max-width: 768px) {
   .producto {
-      width: 45%; /* 2 productos por fila en tabletas */
+      width: 50%; /* 2 productos por fila en tabletas */
   }
 }
 
 @media (max-width: 480px) {
   .producto {
-      width: 45%; /* 2 producto por fila en móviles */
+      width: 50%; /* 2 producto por fila en móviles */
   }
   h1 {
       font-size: 1.5em;

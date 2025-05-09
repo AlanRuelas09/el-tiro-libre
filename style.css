@@ -216,6 +216,38 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 productos por fila */
+    gap: 10px; /* Espacio entre productos */
+  }
+
+  .producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .producto img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
+  .producto h1,
+  .producto p {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+}
+
 /* Estilos para el modal */
 .modal {
   display: none;

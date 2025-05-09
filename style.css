@@ -190,7 +190,7 @@ footer {
 
 @media (max-width: 480px) {
   .producto {
-      width: 90%; /* 1 producto por fila en móviles */
+      width: 90%; /* 2 producto por fila en móviles */
   }
   h1 {
       font-size: 1.5em;

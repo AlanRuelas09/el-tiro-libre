@@ -269,3 +269,23 @@ footer {
   font-weight: bold;
   cursor: pointer;
 }
+
+.btn-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #111;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.btn-arriba:hover {
+  background-color: #333;
+}

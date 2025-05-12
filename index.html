@@ -42,7 +42,22 @@
         <div class="buscador">
             <input type="text" id="busqueda" placeholder="Buscar jersey..." onkeyup="filtrarProductos()">
         </div>
-        
+
+        <div class="tabs">
+  <input type="radio" id="tab-jerseys" name="tab" checked>
+  <label for="tab-jerseys">JERSEYS</label>
+
+  <input type="radio" id="tab-balones" name="tab">
+  <label for="tab-balones">BALONES</label>
+
+  <input type="radio" id="tab-tachones" name="tab">
+  <label for="tab-tachones">TACHONES</label>
+
+  <input type="radio" id="tab-otros" name="tab">
+  <label for="tab-otros">OTROS</label>
+
+  <div class="contenido-tab" id="contenido-jerseys">
+    <!-- Aquí van los productos de JERSEYS -->
         <div class="productos">
             <!-- Producto 1 -->
             <div class="producto">
@@ -967,6 +982,21 @@
         </div>
     </section>
 
+       </div>
+
+       <div class="contenido-tab" id="contenido-balones">
+      <!-- Productos de balones van aquí -->
+    </div>
+
+    <div class="contenido-tab" id="contenido-tachones">
+      <!-- Productos de tachones van aquí -->
+    </div>
+
+    <div class="contenido-tab" id="contenido-otros">
+      <!-- Productos de otros van aquí -->
+    </div>
+  </div>
+        
     <footer>
         <p>&copy; 2025 El Tiro Libre Web. Todos los derechos reservados.</p>
     </footer>

@@ -327,3 +327,27 @@ footer {
   display: block;
 }
 
+.botones-contacto {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-wsp, .btn-ig {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn-wsp {
+  background-color: #25D366;
+}
+
+.btn-ig {
+  background-color: #E1306C;
+}
+

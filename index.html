@@ -1055,14 +1055,15 @@
 </script>
 
     <a href="#" class="btn-arriba">↑</a>
+    
 <script>
   function mostrarModal(imagenSrc, descripcion) {
     document.getElementById("modal-imagen").src = imagenSrc;
     document.getElementById("modal-descripcion").innerText = descripcion;
 
-    // WhatsApp
+    // WhatsApp - CORREGIDO
     const mensaje = encodeURIComponent("Hola, quiero este producto: " + descripcion);
-    document.getElementById("btn-whatsapp").href = "https://wa.me/8715238245" + mensaje;
+    document.getElementById("btn-whatsapp").href = "https://wa.me/5218715238245?text=" + mensaje;
 
     // Mostrar modal
     document.getElementById("modal").style.display = "block";

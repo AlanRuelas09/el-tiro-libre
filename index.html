@@ -1019,7 +1019,7 @@
   <div id="info-ampliada" class="descripcion-modal"></div>
   <div class="mensaje-modal">¡Pídela por mensaje en nuestras redes sociales!</div>
     <div class="botones-contacto">
-  <a id="btn-whatsapp" href="#" target="_blank" class="btn-wsp">Pedir por WhatsApp</a>
+  <a id="btn-whatsapp" href="#" target="_blank" class="boton-whatsapp">WhatsApp</a>
   <a id="btn-instagram" href="https://www.instagram.com/el_tirolibre_mx" target="_blank" class="btn-ig">Ver Instagram</a>
 </div>
 
@@ -1061,7 +1061,7 @@
     document.getElementById("modal-imagen").src = imagenSrc;
     document.getElementById("modal-descripcion").innerText = descripcion;
 
-    // WhatsApp - CORREGIDO
+    // WhatsApp link bien armado
     const mensaje = encodeURIComponent("Hola, quiero este producto: " + descripcion);
     document.getElementById("btn-whatsapp").href = "https://wa.me/5218715238245?text=" + mensaje;
 

@@ -295,8 +295,8 @@ footer {
 }
 
 .modal img {
-  max-width: 90%;
-  max-height: 60vh;
+  width: 250px;
+  height: auto;
   margin-bottom: 10px;
   border-radius: 10px;
 }

@@ -221,55 +221,6 @@ footer {
   }
 }
 
-/* Estilos para el modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding: 1rem;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.85);
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.modal-img {
-  max-width: 90%;
-  max-height: 60vh;
-  margin-bottom: 1rem;
-  border: 2px solid white;
-  border-radius: 10px;
-}
-
-.descripcion-modal {
-  color: white;
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.mensaje-modal {
-  color: #00ff99;
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.cerrar {
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .btn-arriba {
   position: fixed;
   bottom: 20px;
@@ -327,27 +278,59 @@ footer {
   display: block;
 }
 
-.botones-contacto {
-  margin-top: 15px;
-  display: flex;
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
   justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.btn-wsp, .btn-ig {
-  padding: 10px 15px;
+.modal img {
+  max-width: 90%;
+  max-height: 60vh;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.modal p {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.cerrar {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.boton-whatsapp, .boton-instagram {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  border-radius: 5px;
 }
 
-.btn-wsp {
+.boton-whatsapp {
   background-color: #25D366;
 }
 
-.btn-ig {
+.boton-instagram {
   background-color: #E1306C;
 }
-

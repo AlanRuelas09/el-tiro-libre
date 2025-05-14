@@ -1012,40 +1012,40 @@
         }
         </script>
 
-<!-- Modal -->
+<!-- Modal de imagen ampliada -->
 <div id="modal" class="modal">
-  <span class="cerrar" onclick="cerrarModal()">&times;</span>
-  <img id="modal-imagen" src="" alt="Producto">
-  <p id="modal-descripcion"></p>
-  <p style="text-align: center; font-weight: bold;">PÍDELAS POR NUESTRAS REDES SOCIALES</p>
-  <div style="text-align: center; margin-bottom: 15px;">
-    <a href="https://wa.me/5218715238245" target="_blank" class="boton-whatsapp">WhatsApp</a>
-    <a href="https://www.instagram.com/tiro.libre.oficial/" target="_blank" class="boton-instagram">Instagram</a>
-  </div>
+  <span class="cerrar">&times;</span>
+  <img class="modal-img" id="img-ampliada">
+  <div id="info-ampliada" class="descripcion-modal"></div>
+  <div class="mensaje-modal">¡Pídela por mensaje en nuestras redes sociales!</div>
 </div>
 
-        <script>
-  function cerrarModal() {
-    document.getElementById("modal").style.display = "none";
-  }
-
+<!-- Script para ampliar imágenes -->
+<script>
   document.addEventListener("DOMContentLoaded", () => {
-    const imagenes = document.querySelectorAll(".producto img");
+    const productos = document.querySelectorAll(".producto img");
+    const modal = document.getElementById("modal");
+    const imgAmpliada = document.getElementById("img-ampliada");
+    const info = document.getElementById("info-ampliada");
+    const cerrar = document.querySelector(".cerrar");
 
-    imagenes.forEach(img => {
+    productos.forEach(img => {
       img.addEventListener("click", () => {
-        const descripcion = img.parentElement.querySelector("p").innerText;
-        const src = img.src;
-
-        document.getElementById("modal-imagen").src = src;
-        document.getElementById("modal-descripcion").innerText = descripcion;
-        document.getElementById("modal").style.display = "flex";
+        const producto = img.parentElement;
+        const descripcion = producto.innerHTML.replace(img.outerHTML, '');
+        imgAmpliada.src = img.src;
+        info.innerHTML = descripcion;
+        modal.style.display = "flex";
       });
     });
 
+    cerrar.onclick = () => {
+      modal.style.display = "none";
+    };
+
     window.onclick = e => {
-      if (e.target == document.getElementById("modal")) {
-        cerrarModal();
+      if (e.target == modal) {
+        modal.style.display = "none";
       }
     };
   });

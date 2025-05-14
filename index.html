@@ -1018,44 +1018,38 @@
   <img id="modal-imagen" src="" alt="Producto">
   <p id="modal-descripcion"></p>
   <p style="text-align: center; font-weight: bold;">PÍDELAS POR NUESTRAS REDES SOCIALES</p>
-  <div style="text-align: center; margin-bottom: 10px;">
+  <div style="text-align: center; margin-bottom: 15px;">
     <a href="https://wa.me/5218715238245" target="_blank" class="boton-whatsapp">WhatsApp</a>
     <a href="https://www.instagram.com/tiro.libre.oficial/" target="_blank" class="boton-instagram">Instagram</a>
   </div>
 </div>
 
-<!-- Script para ampliar imágenes -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const productos = document.querySelectorAll(".producto img");
-    const modal = document.getElementById("modal");
-    const imgAmpliada = document.getElementById("img-ampliada");
-    const info = document.getElementById("info-ampliada");
-    const cerrar = document.querySelector(".cerrar");
+        <script>
+  function cerrarModal() {
+    document.getElementById("modal").style.display = "none";
+  }
 
-    productos.forEach(img => {
+  document.addEventListener("DOMContentLoaded", () => {
+    const imagenes = document.querySelectorAll(".producto img");
+
+    imagenes.forEach(img => {
       img.addEventListener("click", () => {
-        const producto = img.parentElement;
-        const descripcion = producto.innerHTML.replace(img.outerHTML, '');
-        imgAmpliada.src = img.src;
-        info.innerHTML = descripcion;
-        modal.style.display = "flex";
+        const descripcion = img.parentElement.querySelector("p").innerText;
+        const src = img.src;
+
+        document.getElementById("modal-imagen").src = src;
+        document.getElementById("modal-descripcion").innerText = descripcion;
+        document.getElementById("modal").style.display = "flex";
       });
     });
 
-    cerrar.onclick = () => {
-      modal.style.display = "none";
-    };
-
     window.onclick = e => {
-      if (e.target == modal) {
-        modal.style.display = "none";
+      if (e.target == document.getElementById("modal")) {
+        cerrarModal();
       }
     };
   });
 </script>
-
-    <a href="#" class="btn-arriba">↑</a>
-
+        
 </body>
 </html>

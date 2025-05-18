@@ -347,6 +347,7 @@ footer {
 }
 
 <style>
+/* Centrar contenido del modal */
 .modal {
   display: none;
   position: fixed;
@@ -357,32 +358,21 @@ footer {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.8);
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 20px;
   box-sizing: border-box;
+  text-align: center;
 }
 
+/* Imagen del modal */
 .modal-img {
-  max-width: 90vw;
-  max-height: 70vh;
-  margin-bottom: 15px;
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 10px;
   border-radius: 10px;
-  object-fit: contain;
 }
-
-.cerrar {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-  z-index: 1001;
-}
-</style>
 
 /* Botones de redes */
 .boton-redes {
@@ -409,10 +399,9 @@ footer {
 .cerrar {
   position: absolute;
   top: 15px;
-  right: 20px;
+  right: 10px;
   font-size: 28px;
   color: white;
   cursor: pointer;
 }
 </style>
-

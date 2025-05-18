@@ -374,6 +374,16 @@ footer {
   border-radius: 10px;
 }
 
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 5px; /* Aquí la movemos más a la izquierda */
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
 /* Botones de redes */
 .boton-redes {
   display: inline-block;
@@ -394,14 +404,3 @@ footer {
 .boton-redes:hover {
   opacity: 0.9;
 }
-
-/* Botón cerrar (X) */
-.cerrar {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-}
-</style>

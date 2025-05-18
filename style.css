@@ -377,7 +377,7 @@ footer {
 .cerrar {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 10px;
   font-size: 32px;
   color: white;
   background-color: black;

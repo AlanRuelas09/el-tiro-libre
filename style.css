@@ -399,7 +399,7 @@ footer {
 .cerrar {
   position: absolute;
   top: 15px;
-  right: 5px;
+  right: 25px;
   font-size: 28px;
   color: white;
   cursor: pointer;

@@ -934,8 +934,8 @@
 </div>
 
 <div class="producto">
-    <img src="img/Al-Nasr visitante 22-23.jpg" alt="Jersey Al-Nasr visitante 23/24">
-    <h3>Jersey Al-Nasr visitante 23/24</h3>
+    <img src="img/Al-Nasr visitante 22-23.jpg" alt="Jersey Al-Nassr visitante 23/24">
+    <h3>Jersey Al-Nassr visitante 23/24</h3>
     <p>Precio: $449 MXN</p>
     <p>Con nombre, número y parches: $499 MXN</p>
 </div>
@@ -1101,8 +1101,8 @@
 </div>
 
 <div class="producto">
-    <img src="img/Borusia dormunt local 12-13.jpg" alt="Jersey Borusia Dormunt local 12/13">
-    <h3>Jersey Borusia Dormunt local 12/13</h3>
+    <img src="img/Borusia dormunt local 12-13.jpg" alt="Jersey Borussia Dortmund local 12/13">
+    <h3>Jersey Borussia Dortmund local 12/13</h3>
     <p>Precio: $529 MXN</p>
     <p>Con nombre, número y parches: $599 MXN</p>
 </div>
@@ -1200,6 +1200,68 @@
     <h3>Jersey Alemania visitante 2014</h3>
     <p>Precio: $499 MXN</p>
 </div>   
+
+ <div class="producto">
+    <img src="img/Noruega local 98-99.jpg" alt="Jersey Noruega local 98/99">
+    <h3>Jersey Noruega local 98/99</h3>
+    <p>Precio: $599 MXN</p>
+    <p>Con nombre, número y parches: $699 MXN</p>
+</div>
+
+<div class="producto">
+    <img src="img/Arsenal local 00-01.jpg" alt="Jersey Arsenal local 00/01">
+    <h3>Jersey Arsenal local 00/01</h3>
+    <p>Precio: $599 MXN</p>
+    <p>Con nombre, número y parches: $699 MXN</p>
+</div>
+
+<div class="producto">
+    <img src="img/Cruzeiro local 93-94.jpg" alt="Jersey Cruzeiro local 93/94">
+    <h3>Jersey Cruzeiro local 93/94</h3>
+    <p>Precio: $599 MXN</p>
+    <p>Con nombre, número y parches: $649 MXN</p>
+</div>
+
+<div class="producto">
+    <img src="img/Real Madrid local 00-01.jpg" alt="Jersey Real Madrid local 00/01">
+    <h3>Jersey Real Madrid local 00/01</h3>
+    <p>Precio: $599 MXN</p>
+    <p>Con nombre, número y parches: $649 MXN</p>
+</div>
+
+<div class="producto">
+    <img src="img/PSG local 13-14.jpg" alt="Jersey PSG local 13/14">
+    <h3>Jersey PSG local 13/14</h3>
+    <p>Precio: $499 MXN</p>
+    <p>Con nombre, número y parches: $549 MXN</p>
+</div>
+
+<div class="producto">
+    <img src="img/Manchester United local 23-24.jpg" alt="Jersey Manchester United local 23/24">
+    <h3>Jersey Manchester United local 23/24</h3>
+    <p>Precio: $399 MXN</p>
+</div>
+
+<div class="producto">
+    <img src="img/PSG local 21-22.jpg" alt="Jersey PSG local 21/22">
+    <h3>Jersey PSG local 21/22</h3>
+    <p>Precio: $499 MXN</p>
+    <p>Con nombre, número y parches: $549 MXN</p>
+</div>
+
+<div class="producto">
+    <img src="img/Al-Nassr local 23-24.jpg" alt="Jersey Al-Nassr local 23/24">
+    <h3>Jersey Al-Nassr local 23/24</h3>
+    <p>Precio: $399 MXN</p>
+    <p>Con nombre, número y parches: $449 MXN</p>
+</div>
+
+<div class="producto">
+    <img src="img/Argelia local 24-25.jpg" alt="Jersey Argelia local 24/25">
+    <h3>Jersey Argelia local 24/25</h3>
+    <p>Precio: $499 MXN</p>
+</div>
+
             <!-- Puedes agregar más productos así -->
         
     </section>
@@ -1222,17 +1284,6 @@
     <footer>
         <p>&copy; 2025 El Tiro Libre Web. Todos los derechos reservados.</p>
     </footer>
-    <script>
-        function filtrarProductos() {
-            const input = document.getElementById('busqueda').value.toLowerCase();
-            const productos = document.querySelectorAll('.producto');
-        
-            productos.forEach(producto => {
-                const texto = producto.textContent.toLowerCase();
-                producto.style.display = texto.includes(input) ? 'block' : 'none';
-            });
-        }
-        </script>
 
             <a href="#" class="btn-arriba">↑</a>
         
@@ -1278,6 +1329,27 @@
     };
   });
 </script>
-    
+
+<script>
+  function quitarAcentos(texto) {
+    return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  }
+
+  function filtrarProductos() {
+    const input = document.getElementById("busqueda").value;
+    const filtro = quitarAcentos(input);
+    const productos = document.querySelectorAll(".producto");
+
+    productos.forEach(producto => {
+      const textoProducto = quitarAcentos(producto.innerText);
+      if (textoProducto.includes(filtro)) {
+        producto.style.display = "block";
+      } else {
+        producto.style.display = "none";
+      }
+    });
+  }
+</script>
+ 
 </body>
 </html>
